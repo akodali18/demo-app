@@ -6,12 +6,12 @@ replicaCount:
   blue: 1
   green: 1
 
-namespace: "tanzu-observability-demo"
+namespace: "observability-system"
 
-cluster: k8s-cluster
+cluster: otel-test-gke-cluster-021323
 
 image:
-  repository:  public.ecr.aws/tanzu_observability_demo_app/to-demo
+  repository: projects.registry.vmware.com/tanzu_observability_keights_saas/vanilla-demo-app/
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
@@ -21,11 +21,11 @@ wavefront:
    url: "https://your_cluster.wavefront.com/api/"
 
 logs:
-  enabled: false
+  enabled: true
 
 customtags:
    location: k8s-cluster
-   environment: non-prod
+   environment: dev
 
 imagePullSecrets: []
 nameOverride: ""

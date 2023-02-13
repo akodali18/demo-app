@@ -29,9 +29,9 @@ else
 	echo "\n >>> no prepare.sh not found\n"
 fi
 
-docker build . -t ${K8S_REPOSITORY}$IMAGE 
+docker build -t ${K8S_REPOSITORY}$IMAGE .
 
-if [${K8S_REPOSITORY} ]; then 
+if [ ${K8S_REPOSITORY} ]; then
         echo -e "\npushing to ${K8S_REPOSITORY}$IMAGE \n"
 	docker push ${K8S_REPOSITORY}$IMAGE
 else

@@ -1,10 +1,10 @@
 ### These labels affect how your app is viewed in Tanzu Observability and K8S
-export K8S_NAMESPACE=tanzu-observability-demo
-export K8S_APPLICATION=tanzu-observability-demo
-export K8S_CLUSTER=tanzu-observability-demo
-export K8S_LOCATION=homelab
+export K8S_NAMESPACE=observability-system
+export K8S_APPLICATION=otel-vanilla-demo-app
+export K8S_CLUSTER=otel-test-gke-cluster-021323
+export K8S_LOCATION=k8s-cluster
 export K8S_ENVIRONMENT=dev
-export K8S_REPOSITORY=public.ecr.aws/tanzu_observability_demo_app/to-demo
+export K8S_REPOSITORY=projects.registry.vmware.com/tanzu_observability_keights_saas/vanilla-demo-app/
 
 ### Update with your Tanzu Observability by Wavefront info
 export WAVEFRONT_BASE64_TOKEN=[BASE 64 ENCODED API TOKEN]

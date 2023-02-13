@@ -145,7 +145,7 @@ Build the Java services from the root folder:
 Create docker images and push them to the registry (if `K8S_REPOSITORY` is set).
 
 ```console
-cd ../images-k8s 
+cd images-k8s 
 ./all.sh
 ```
 
